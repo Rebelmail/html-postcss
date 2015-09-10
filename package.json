@@ -23,12 +23,12 @@
   "homepage": "https://github.com/RebelMail/html-postcss#readme",
   "devDependencies": {
     "chai": "^3.2.0",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5",
-    "sinon": "^1.15.4"
+    "istanbul": "^0.3.19",
+    "mocha": "^2.3.2",
+    "sinon": "^1.16.1"
   },
   "dependencies": {
     "cheerio": "^0.19.0",
-    "postcss": "^4.1.16"
+    "postcss": "^5.0.4"
   }
 }
