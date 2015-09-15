@@ -43,10 +43,9 @@ describe('html-postcss', function() {
     });
 
     it('can pass postcss options', function() {
-      var htmlString = '<html><style>body { color: black;</style></html>';
-      var expected = '<html><style>body { color: black;}</style></html>';
-      var actual = processor.process(htmlString, null, { safe: true });
-      expect(actual).to.equal(expected);
+      var htmlString = '<html><style>body { color: black; }</style></html>';
+      var actual = processor.process(htmlString, null, { map: true });
+      expect(actual).to.contain('sourceMappingURL=');
     });
   });
 });
