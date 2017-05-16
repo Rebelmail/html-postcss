@@ -2,8 +2,9 @@
   "name": "html-postcss",
   "version": "0.1.2",
   "description": "PostCSS for inline HTML CSS",
-  "main": "index.js",
+  "main": "lib/html-postcss.js",
   "scripts": {
+    "pretest": "eslint .",
     "test": "istanbul test _mocha -- --recursive"
   },
   "repository": {
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/RebelMail/html-postcss#readme",
   "devDependencies": {
     "chai": "^3.4.1",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "sinon": "^1.17.2"
