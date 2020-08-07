@@ -19,7 +19,7 @@ describe('html-postcss', function() {
     var processor;
 
     beforeEach(function() {
-      transformerSpy.reset();
+      transformerSpy.resetHistory();
       processor = new HTMLPostCSS([spyPlugin]);
     });
 
