@@ -1,14 +1,18 @@
 {
-  "name": "html-postcss",
-  "version": "0.2.1",
+  "name": "tonix-html-postcss",
+  "version": "1.0.0",
   "description": "PostCSS for inline HTML CSS",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul test _mocha -- --recursive"
+    "test": "istanbul test _mocha -- --recursive",
+    "publish-git": "npm publish && git push && git push --tags",
+    "publish-patch": "npm version patch && npm run publish-git",
+    "publish-minor": "npm version minor && npm run publish-git",
+    "publish-major": "npm version major && npm run publish-git"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RebelMail/html-postcss.git"
+    "url": "git+https://github.com/tonix-tuft/tonix-html-postcss.git"
   },
   "keywords": [
     "html",
@@ -29,6 +33,6 @@
   },
   "dependencies": {
     "cheerio": "^0.20.0",
-    "postcss": "^7.0.32"
+    "postcss": "^8.1.1"
   }
 }
