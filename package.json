@@ -1,5 +1,5 @@
 {
-  "name": "html-postcss",
+  "name": "tonix-html-postcss",
   "version": "0.2.1",
   "description": "PostCSS for inline HTML CSS",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RebelMail/html-postcss.git"
+    "url": "git+https://github.com/tonix-tuft/tonix-html-postcss.git"
   },
   "keywords": [
     "html",
