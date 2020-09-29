@@ -4,7 +4,11 @@
   "description": "PostCSS for inline HTML CSS",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul test _mocha -- --recursive"
+    "test": "istanbul test _mocha -- --recursive",
+    "publish-git": "npm publish && git push && git push --tags",
+    "publish-patch": "npm version patch && npm run publish-git",
+    "publish-minor": "npm version minor && npm run publish-git",
+    "publish-major": "npm version major && npm run publish-git"
   },
   "repository": {
     "type": "git",
